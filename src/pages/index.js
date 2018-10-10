@@ -1,6 +1,7 @@
 import SimplePage from "./simplepage";
 import TodoPage from "./Todo";
+import WeatherPage from "./Weather";
 
-export default { SimplePage, TodoPage };
+export default { SimplePage, TodoPage, WeatherPage };
 
-export { SimplePage, TodoPage };
+export { SimplePage, TodoPage, WeatherPage };

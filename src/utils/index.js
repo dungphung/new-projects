@@ -1,9 +1,11 @@
 import constants from "./constants";
 import { connectAutoDispatch } from "./reduxConnnect";
+import axios from "./axios";
 
 export default {
   constants,
-  connectAutoDispatch
+  connectAutoDispatch,
+  axios
 };
 
-export { constants, connectAutoDispatch };
+export { constants, connectAutoDispatch, axios };

@@ -1,4 +1,4 @@
-import { SimplePage, TodoPage } from "./pages";
+import { SimplePage, TodoPage, WeatherPage } from "./pages";
 const routes = [
   {
     path: "/simple-page",
@@ -7,6 +7,10 @@ const routes = [
   {
     path: "/todo-page",
     component: TodoPage
+  },
+  {
+    path: "/weather-page",
+    component: WeatherPage
   }
 ];
 

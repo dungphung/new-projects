@@ -4,7 +4,7 @@ export default class FormTodo extends React.Component {
   constructor() {
     super();
     this.state = {
-      content: "",
+      title: "",
       id: Date.now()
     };
     this.onChange = this.onChange.bind(this);
@@ -14,7 +14,7 @@ export default class FormTodo extends React.Component {
 
   onChange(e) {
     this.setState({
-      content: e.target.value,
+      title: e.target.value,
       id: Date.now()
     });
   }
@@ -28,7 +28,7 @@ export default class FormTodo extends React.Component {
     this.setState(
       {
         key: "",
-        content: ""
+        title: ""
       },
       () => {
         this.props.addItem(item);
@@ -49,7 +49,7 @@ export default class FormTodo extends React.Component {
             ref={ref => {
               this.inputElement = ref;
             }}
-            value={this.state.content}
+            value={this.state.title}
             onChange={this.onChange}
           />
           <button type="sbumit"> Add Task</button>

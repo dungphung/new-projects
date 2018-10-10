@@ -10,7 +10,7 @@ export default function TodoItems({ items }) {
   return (
     <UL>
       {items.map(item => {
-        return <li key={item.id}>+ {item.content}</li>;
+        return <li key={item.id}>+ {item.title}</li>;
       })}
     </UL>
   );
